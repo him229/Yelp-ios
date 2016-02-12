@@ -17,7 +17,7 @@ class BusinessesViewController: UIViewController {
 
         Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
-        
+            
             for business in businesses {
                 print(business.name!)
                 print(business.address!)
