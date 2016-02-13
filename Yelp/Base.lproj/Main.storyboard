@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="HEd-DI-rI3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="HEd-DI-rI3" customClass="BusinessCell" customModule="Yelp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HEd-DI-rI3" id="yUN-xj-SN8">
@@ -72,6 +72,14 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="y5I-QZ-wvE" id="1cs-bu-wCd"/>
+                                            <outlet property="categoriesLabel" destination="y5I-QZ-wvE" id="oMJ-MB-hgb"/>
+                                            <outlet property="distanceLabel" destination="mHR-bg-hm4" id="3Sa-Lj-hND"/>
+                                            <outlet property="ratingsImageView" destination="EfY-1I-45O" id="DjS-RX-ec2"/>
+                                            <outlet property="reviewsCountLabel" destination="NS8-M0-Ea9" id="UL3-yT-fqm"/>
+                                            <outlet property="thumbImageView" destination="11j-Kp-uz1" id="BVN-YE-8Kl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
