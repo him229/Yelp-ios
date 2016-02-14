@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Yelp-->
@@ -36,23 +35,27 @@
                                                         <constraint firstAttribute="height" constant="65" id="iWx-Ui-6cB"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EfY-1I-45O">
-                                                    <rect key="frame" x="81" y="33" width="83" height="15"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EfY-1I-45O">
+                                                    <rect key="frame" x="81" y="31" width="83" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="Ckm-6I-iLH"/>
+                                                        <constraint firstAttribute="width" constant="83" id="fJ5-vk-8kK"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1. Grand Pu Bah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbU-Aa-z64">
-                                                    <rect key="frame" x="81" y="8" width="115" height="18"/>
+                                                    <rect key="frame" x="81" y="8" width="181.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="469 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS8-M0-Ea9">
-                                                    <rect key="frame" x="172" y="33" width="73" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS8-M0-Ea9">
+                                                    <rect key="frame" x="172" y="31.5" width="73" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.51039663461538454" green="0.51039663461538454" blue="0.51039663461538454" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjg-wJ-y6J">
-                                                    <rect key="frame" x="296" y="30" width="16" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjg-wJ-y6J">
+                                                    <rect key="frame" x="296" y="30" width="16" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.51039663461538454" green="0.51039663461538454" blue="0.51039663461538454" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -70,20 +73,26 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHR-bg-hm4">
-                                                    <rect key="frame" x="262" y="11" width="41.5" height="14.5"/>
+                                                    <rect key="frame" x="270.5" y="10" width="41.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.51039663461538454" green="0.51039663461538454" blue="0.51039663461538454" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="mHR-bg-hm4" firstAttribute="top" secondItem="yUN-xj-SN8" secondAttribute="top" constant="10" id="9Ty-a4-cCA"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kjg-wJ-y6J" secondAttribute="trailing" constant="8" id="AIU-rn-DAo"/>
                                                 <constraint firstItem="XbU-Aa-z64" firstAttribute="leading" secondItem="11j-Kp-uz1" secondAttribute="trailing" constant="8" id="BlB-04-Zei"/>
-                                                <constraint firstItem="mHR-bg-hm4" firstAttribute="baseline" secondItem="XbU-Aa-z64" secondAttribute="baseline" id="IKv-qF-BcX"/>
+                                                <constraint firstItem="EfY-1I-45O" firstAttribute="leading" secondItem="11j-Kp-uz1" secondAttribute="trailing" constant="8" id="Ig6-et-ezS"/>
                                                 <constraint firstItem="XbU-Aa-z64" firstAttribute="top" secondItem="yUN-xj-SN8" secondAttribute="top" constant="8" id="MVj-Kd-gKa"/>
+                                                <constraint firstItem="EfY-1I-45O" firstAttribute="top" secondItem="XbU-Aa-z64" secondAttribute="bottom" constant="5" id="OzV-Wc-CYc"/>
                                                 <constraint firstItem="11j-Kp-uz1" firstAttribute="leading" secondItem="yUN-xj-SN8" secondAttribute="leading" constant="8" id="QPI-IC-mvC"/>
-                                                <constraint firstItem="mHR-bg-hm4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XbU-Aa-z64" secondAttribute="trailing" constant="8" id="fqW-EW-ZFM"/>
+                                                <constraint firstItem="NS8-M0-Ea9" firstAttribute="centerY" secondItem="EfY-1I-45O" secondAttribute="centerY" id="TC1-2d-3RU"/>
+                                                <constraint firstItem="NS8-M0-Ea9" firstAttribute="leading" secondItem="EfY-1I-45O" secondAttribute="trailing" constant="8" id="ZdB-qt-h2v"/>
+                                                <constraint firstItem="Kjg-wJ-y6J" firstAttribute="top" secondItem="mHR-bg-hm4" secondAttribute="bottom" constant="5" id="Zry-W2-73w"/>
+                                                <constraint firstItem="mHR-bg-hm4" firstAttribute="leading" secondItem="XbU-Aa-z64" secondAttribute="trailing" constant="8" id="fqW-EW-ZFM"/>
                                                 <constraint firstItem="11j-Kp-uz1" firstAttribute="top" secondItem="yUN-xj-SN8" secondAttribute="top" constant="8" id="rHn-R6-16b"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="mHR-bg-hm4" secondAttribute="trailing" constant="8" id="vmc-c6-1FJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="mHR-bg-hm4" secondAttribute="trailing" constant="8" id="vmc-c6-1FJ"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="11j-Kp-uz1" secondAttribute="bottom" constant="12" id="wdf-al-SnN"/>
                                             </constraints>
                                         </tableViewCellContentView>
