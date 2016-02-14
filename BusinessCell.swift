@@ -14,8 +14,24 @@ class BusinessCell: UITableViewCell {
     @IBOutlet weak var ratingsImageView: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var reviewsCountLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
+    
+    var business: Business! {
+        didSet{
+            nameLabel.text = business.name
+            thumbImageView.setImageWithURL(business.imageURL!)
+            ratingsImageView.setImageWithURL(business.ratingImageURL!)
+            addressLabel.text = business.address
+            categoriesLabel.text = business.categories
+            reviewsCountLabel.text = "\(business.reviewCount!) Reviews"
+            distanceLabel.text = business.distance
+            
+            
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
