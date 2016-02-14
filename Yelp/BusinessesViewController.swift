@@ -10,6 +10,10 @@ import UIKit
 
 class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var filteredData: [String]!
+    
+    var searchController: UISearchController!
+    
     var businesses: [Business]!
     
     @IBOutlet weak var tableView: UITableView!
@@ -43,6 +47,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
             }
         }
 */
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
