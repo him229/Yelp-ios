@@ -33,6 +33,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/him229/Yelp-ios/blob/master/yelp_1_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 <img src='https://github.com/him229/Yelp-ios/blob/master/yelp_2_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
