@@ -35,6 +35,8 @@ class BusinessCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        thumbImageView.layer.cornerRadius = 5
+        thumbImageView.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
