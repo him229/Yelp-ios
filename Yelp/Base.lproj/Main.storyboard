@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EkF-My-2Nq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-43" width="320" height="611"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="t0v-4j-ULD">
                                     <rect key="frame" x="0.0" y="64" width="320" height="44"/>
@@ -124,7 +124,7 @@
                         <constraints>
                             <constraint firstItem="VBY-gq-v8E" firstAttribute="top" secondItem="EkF-My-2Nq" secondAttribute="bottom" id="Apm-GE-0U5"/>
                             <constraint firstItem="EkF-My-2Nq" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="IuS-aE-ibb"/>
-                            <constraint firstItem="EkF-My-2Nq" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="gZM-nS-o33"/>
+                            <constraint firstItem="EkF-My-2Nq" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" constant="-43" id="gZM-nS-o33"/>
                             <constraint firstAttribute="trailing" secondItem="EkF-My-2Nq" secondAttribute="trailing" id="seD-SP-a9u"/>
                         </constraints>
                     </view>
