@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="t0v-4j-ULD">
                                     <rect key="frame" x="0.0" y="64" width="320" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
@@ -78,7 +78,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHR-bg-hm4">
-                                                    <rect key="frame" x="270" y="10" width="41.5" height="14.5"/>
+                                                    <rect key="frame" x="270" y="10.5" width="41.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.51039663461538454" green="0.51039663461538454" blue="0.51039663461538454" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="addressLabel" destination="y5I-QZ-wvE" id="1cs-bu-wCd"/>
+                                            <outlet property="addressLabel" destination="ldW-XB-eCc" id="w6h-as-pCH"/>
                                             <outlet property="categoriesLabel" destination="y5I-QZ-wvE" id="oMJ-MB-hgb"/>
                                             <outlet property="distanceLabel" destination="mHR-bg-hm4" id="3Sa-Lj-hND"/>
                                             <outlet property="nameLabel" destination="XbU-Aa-z64" id="dfR-I5-JKb"/>
