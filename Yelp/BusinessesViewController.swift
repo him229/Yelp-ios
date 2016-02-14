@@ -9,13 +9,10 @@
 import UIKit
 
 class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    var filteredData: [String]!
-    
-    var searchController: UISearchController!
     
     var businesses: [Business]!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -47,6 +44,13 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
             }
         }
 */
+        self.searchBar.sizeToFit()
+        
+        // the UIViewController comes with a navigationItem property
+        // this will automatically be initialized for you if when the
+        // view controller is added to a navigation controller's stack
+        // you just need to set the titleView to be the search bar
+        self.navigationItem.titleView = searchBar
         
     }
     
